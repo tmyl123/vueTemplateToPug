@@ -19,13 +19,12 @@ npm install -g vueTemplateToPug-1.0.0.tgz
 ```
 vueTemplateToPug -p -f <filename>
 
-❯ vueTemplateToPug -h
-Usage: vueTemplateToPug [options]
+Usage: index [options]
 
 Options:
   -V, --version               output the version number
-  -f, --file-name [value]     Enable pug prettier. Default: true (default: "")
-  -p, --pretty                Enable pug prettier. Default: true
+  -f, --file-name [value]     Vue file to parse.
+  -p, --pretty                Enable pug prettier
   -s, --start-tag [value]     Start tag for parser. Default: <template> (default: "<template>")
   -e, --end-tag [value]       End tag for parser. Default: </template> (default: "</template>")
   -P, --place-holder [value]  Default: _____ (default: "_____")

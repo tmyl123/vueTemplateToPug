@@ -7,11 +7,7 @@ const program = require("commander");
 program
     .version("1.0.0")
     .usage("[options]")
-    .requiredOption(
-        "-f, --file-name [value]",
-        "Enable pug prettier. Default: true",
-        ""
-    )
+    .requiredOption("-f, --file-name [value]", "Vue file to parse.")
     .option("-p, --pretty", "Enable pug prettier")
     .option(
         "-s, --start-tag [value]",
@@ -25,7 +21,6 @@ program
     )
     .option("-P, --place-holder [value]", "Default: _____", "_____")
     .parse(process.argv);
-
 
 const { fileName, pretty, startTag, endTag, placeHolder } = program;
 // console.log(fileName, pretty, startTag, endTag, placeHolder);
