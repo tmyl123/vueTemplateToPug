@@ -12,7 +12,7 @@ program
         "Enable pug prettier. Default: true",
         ""
     )
-    .option("-p, --pretty", "Enable pug prettier. Default: true")
+    .option("-p, --pretty", "Enable pug prettier")
     .option(
         "-s, --start-tag [value]",
         "Start tag for parser. Default: <template>",
