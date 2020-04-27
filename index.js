@@ -102,14 +102,16 @@ function prettierPug(pugText) {
 }
 
 function replaceCapitalToPlaceholder(text) {
-    let replaceText = text.replace(/[A-Z]/g, function (match, offset) {
-        return match.toLowerCase() + "_____";
+    let re = new RegExp("[A-Z]", "g");
+    let replaceText = text.replace(re, function (match, offset) {
+        return match.toLowerCase() + placeHolder;
     });
     return replaceText;
 }
 
 function replacePlaceholderToCapital(text) {
-    let replaceText = text.replace(/[a-z]_____/g, function (match, offset) {
+    let re = new RegExp("[a-z]" + placeHolder, "g");
+    let replaceText = text.replace(re, function (match, offset) {
         return match.slice(0, 1).toUpperCase();
     });
     return replaceText;
