@@ -102,7 +102,7 @@ function prettierPug(pugText) {
 }
 
 function replaceCapitalToPlaceholder(text) {
-    let replaceText = text.replace(/[A-Z]_____/g, function (match, offset) {
+    let replaceText = text.replace(/[A-Z]/g, function (match, offset) {
         return match.toLowerCase() + "_____";
     });
     return replaceText;
