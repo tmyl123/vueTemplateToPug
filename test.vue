@@ -12,7 +12,8 @@
                 icon="md-create"
                 size="small"
                 >Add Item</Button
-            > <Row>
+            >
+            <Row>
                 <Col :lg="8" :md="12">
                     <MyComponentA
                         class="singleNumCardMd"

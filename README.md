@@ -49,10 +49,12 @@ Options:
 
 
 ### Snippet
-
+![image](https://github.com/tmyl123/vueTemplateToPug/blob/master/snippet.png)
 
 <br>
 
 #### Bonus
 If you use `vim` as I am, you can put `map <C-p> :w<CR>:!vueTemplateToPug %<CR>` inside you `~/.vimrc`, \
 so you can just hit `Ctrl + P`, and the convert result will just pop up :v:
+
+![image](https://github.com/tmyl123/vueTemplateToPug/blob/master/vim_snippet.gif)
