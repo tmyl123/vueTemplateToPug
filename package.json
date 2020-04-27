@@ -1,0 +1,21 @@
+{
+    "name": "vueTemplateToPug",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bin": {
+        "vueTemplateToPug": "./index.js"
+    },
+    "dependencies": {
+        "@prettier/plugin-pug": "^1.2.0",
+        "commander": "^5.1.0",
+        "html2jade": "^0.8.6",
+        "prettier": "^2.0.5"
+    }
+}
