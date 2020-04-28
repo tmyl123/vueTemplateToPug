@@ -1,6 +1,7 @@
 <template>
     <div>
         <Card class="card-shadow">
+        <Foo/>
             <p slot="title">
                 <Icon type="md-basket"></Icon>
                 Assets

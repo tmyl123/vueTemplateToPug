@@ -44,6 +44,7 @@ async function vueToPug(fileName) {
 
     // Parse html between <template></template>
     let parsedHtmlText = parseTemplateTag(htmlText);
+    parsedHtmlText = selfClosingTagsCompletion(parsedHtmlText);
     parsedHtmlText = replaceCapitalToPlaceholder(parsedHtmlText);
 
     // Transfer to pug
@@ -115,4 +116,18 @@ function replacePlaceholderToCapital(text) {
         return match.slice(0, 1).toUpperCase();
     });
     return replaceText;
+}
+
+function selfClosingTagsCompletion(htmlString) {
+    let splits = htmlString.split("/>");
+    let lastSplit = splits[splits.length - 1];
+    let result = "";
+    for (let i = 0; i < splits.length - 1; i++) {
+        let currentString = splits[i];
+        let splits2 = currentString.split("<");
+        let lastSplit2 = splits2[splits2.length - 1];
+        result += currentString + "></" + lastSplit2.split(" ")[0] + ">";
+    }
+    result += lastSplit;
+    return result;
 }
