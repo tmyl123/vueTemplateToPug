@@ -7,7 +7,9 @@ Parse `<template></template>` in .vue files and convert to pug. :tada: ***Capita
 ### Story behind..
 >While there already has bunch of html to pug converter out there, I made this just for the convenience \
 >when I need to convert from vue directly. And the most important part is this tool will **preserve the capital \
->case**, which lots of frontend libraries use it nowadays, as well as attribute names.
+>case**, which lots of frontend libraries use it nowadays, as well as attribute names. \
+>
+>If you feel like using other online converter using copy pasting, I found this is a [good one](https://html2pug.now.sh)
 
 
 Any suggestions are welcome :bowtie:
@@ -54,7 +56,7 @@ Options:
 <br>
 
 #### Bonus
-If you use `vim` as I am, you can put `map <C-p> :w<CR>:!vueTemplateToPug %<CR>` inside you `~/.vimrc`, \
+If you are a `vimer` as I am, you can put `map <C-p> :w<CR>:!vueTemplateToPug %<CR>` inside you `~/.vimrc`, \
 so you can just hit `Ctrl + P`, and the convert result will just pop up :v:
 
 ![image](https://github.com/tmyl123/vueTemplateToPug/blob/master/vim_snippet.gif)
